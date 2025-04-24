@@ -13,7 +13,7 @@ const AboutSection = () => {
     useEffect(() => {
     Aos.init({ duration: 800 });
   }, []);
-  return <section id="about" className="w-full container mx-auto my-10 p-4">
+  return <section id="who-we-are" className="w-full container mx-auto my-10 p-4">
       <div  className="w-full flex flex-col md:flex-row gap-5">
         <div data-aos="fade-up" className="w-full">
           <div className="flex items-center gap-2">

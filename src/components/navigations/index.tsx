@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { BsQuestionCircleFill } from "react-icons/bs";
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
@@ -10,11 +11,11 @@ const NavLinks = [
   },
   {
     name: "Who we are",
-    link: "/"
+    link: "/#who-we-are"
   },
   {
     name: "Our services",
-    link: "/"
+    link: "/#services"
   },
   {
     name: "Track order",
@@ -28,7 +29,7 @@ const NavigationHolder = () => {
       <ul className="lg:flex items-center gap-5 hidden ">
         {NavLinks.map((item, index) =>
           <li key={index} className="text-base font-medium">
-            <a href={item.link} className=" font-semibold">
+            <a href={item.link} className="cursor-pointer font-semibold">
               {item.name}
             </a>
           </li>
@@ -48,9 +49,11 @@ const NavigationHolder = () => {
           <span className="text-base font-semibold">Complaints</span>
           <BsQuestionCircleFill className="text-base" />
         </button>
-        <button className="w-[128px] h-[45px] cursor-pointer bg-[#571F88] text-base text-white font-semibold rounded-md flex items-center justify-center gap-2">
-          Get in touch
-        </button>
+        <Link href="/#contact">
+          <button className="w-[128px] h-[45px] cursor-pointer bg-[#571F88] text-base text-white font-semibold rounded-md flex items-center justify-center gap-2">
+            Get in touch
+          </button>
+        </Link>
       </div>
       <div className="block lg:hidden">
         <HiMiniBars3BottomRight className="text-2xl cursor-pointer" />

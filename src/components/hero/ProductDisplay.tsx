@@ -1,5 +1,6 @@
+"use client"
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 const items = [
@@ -45,6 +46,7 @@ const items = [
     }
 ];
 const ProductDisplay = () => {
+    const [hoveredItem, setHoveredItem] = useState<number | null>(null);
     return <div>
         <div className="w-full ">
             <div className="w-full p-4 rounded-3xl bg-[#FAFAFA] grid gap-3 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -54,7 +56,9 @@ const ProductDisplay = () => {
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1, delay: 0.1 }}
                         key={item.id}
-                        className="w-full md:h-[273px] h-[160px] rounded-3xl aspect-square relative"
+                        onMouseEnter={() => setHoveredItem(item.id)}
+                        onMouseLeave={() => setHoveredItem(null)}
+                        className="w-full md:h-[273px] h-[160px] rounded-3xl cursor-pointer aspect-square relative"
                     >
                         <Image
                             src={item.image}
@@ -63,10 +67,12 @@ const ProductDisplay = () => {
                             height={500}
                             className="w-full h-full object-cover rounded-3xl"
                         />
-                        {item?.name && <div className="w-full absolute bottom-0 left-0 rounded-b-3xl backdrop-blur-sm bg-opacity-20  bg-[#19181821] p-3">
-                            <p className="text-sm font-semibold text-white">
+                        {hoveredItem === item.id && item?.name && <div className="w-full absolute bottom-0 left-0 rounded-b-3xl backdrop-blur-sm bg-opacity-20  bg-[#19181821] p-3">
+                            <motion.p initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ duration: 1, delay: 0.1 }} className="text-sm font-semibold text-white">
                                 {item?.name}
-                            </p>
+                            </motion.p>
                         </div>}
 
                     </motion.div>
