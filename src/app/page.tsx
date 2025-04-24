@@ -4,7 +4,7 @@ import HomeHero from "@/components/hero";
 import NavigationHolder from "@/components/navigations";
 import OurProcess from "@/components/Our_process";
 import OurServices from "@/components/Our_services";
-import Image from "next/image";
+
 
 export default function Home() {
   return (
