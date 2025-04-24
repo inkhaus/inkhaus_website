@@ -97,40 +97,23 @@ const OurServices = () => {
   useEffect(() => {
     Aos.init({ duration: 800 });
   }, []);
-  return (
-    <section id="services" className="w-full h-full container mx-auto my-4">
+  return <section id="services" className="w-full h-full container mx-auto my-4">
       <div className="w-full flex flex-col items-center justify-center">
-        <div className="w-full bg-white sticky top-[110px] py-7 left-0 z-50">
+        <div className="w-full bg-white sticky md:top-[110px] top-[70px] py-7 left-0 z-50">
           <div className="flex items-center justify-center gap-2">
-            <motion.h1
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 0.1 }}
-              className="text-3xl font-semibold tracking-wide"
-            >
+            <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.1 }} className="text-3xl font-semibold tracking-wide">
               Our services
             </motion.h1>
             <div className="w-[38px] h-[38px] aspect-square">
-              <Image
-                src="/icons/services.svg"
-                alt="line"
-                width={500}
-                height={500}
-                className="w-full h-full"
-              />
+              <Image src="/icons/services.svg" alt="line" width={500} height={500} className="w-full h-full" />
             </div>
           </div>
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.1 }}
-            className="text-sm font-semibold text-[#555F6D] text-center mt-2"
-          >
+          <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.1 }} className="text-sm font-semibold text-[#555F6D] text-center mt-2">
             From prints that speak to you, to souvenirs that speak for you.
           </motion.p>
         </div>
         <div data-aos="fade-up" className="w-full flex flex-col gap-7">
-          <div className="w-full p-6 rounded-2xl bg-[#FAFAFA] sticky top-[210px] left-0  my-5">
+          <div className="w-full p-6 rounded-2xl bg-[#FAFAFA] md:sticky top-[210px] left-0  my-5">
             <h2 className="text-lg font-semibold">
               T-Shirt printing & Customisation
             </h2>
@@ -158,7 +141,7 @@ const OurServices = () => {
               )}
             </div>
           </div>
-          <div className="w-full p-6 rounded-2xl bg-[#FAFAFA] sticky top-[210px] left-0 z-10 my-5">
+          <div className="w-full p-6 rounded-2xl bg-[#FAFAFA] md:sticky top-[210px] left-0 z-10 my-5">
             <h2 className="text-lg font-semibold">
               Branded items & custom prints
             </h2>
@@ -186,8 +169,10 @@ const OurServices = () => {
               )}
             </div>
           </div>
-          <div className="w-full p-6 rounded-2xl bg-[#FAFAFA] sticky top-[210px] left-0 z-20 my-5">
-            <h2 className="text-lg font-semibold">Photo & document services</h2>
+          <div className="w-full p-6 rounded-2xl bg-[#FAFAFA] md:sticky top-[210px] left-0 z-20 my-5">
+            <h2 className="text-lg font-semibold">
+              Photo & document services
+            </h2>
             <div className="w-full my-4 grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               {productList3.map((item, index) =>
                 <motion.div key={index} className="w-full mt-7">
@@ -214,8 +199,7 @@ const OurServices = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
 
 export default OurServices;

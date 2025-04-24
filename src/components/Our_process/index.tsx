@@ -8,34 +8,17 @@ const OurProcess = () => {
   useEffect(() => {
     Aos.init({ duration: 800 });
   }, []);
-  return (
-    <section className="w-full container mx-auto my-8">
+  return <section className="w-full container mx-auto p-4 my-8">
       <div data-aos="fade-up">
         <div className="flex items-center gap-4">
-          <motion.h1
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.1 }}
-            className="text-3xl font-semibold tracking-wide"
-          >
+          <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.1 }} className="text-3xl font-semibold tracking-wide">
             Our process
           </motion.h1>
           <div className="w-[32px] h-[32px] aspect-square">
-            <Image
-              src="/icons/process.png"
-              alt="line"
-              width={500}
-              height={500}
-              className="w-full h-full"
-            />
+            <Image src="/icons/process.png" alt="line" width={500} height={500} className="w-full h-full" />
           </div>
         </div>
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.1 }}
-          className="text-base text-[#555F6D] font-semibold mt-1"
-        >
+        <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.1 }} className="text-base text-[#555F6D] font-semibold mt-1">
           From idea to print in 3 easy steps:
         </motion.p>
         <button className="w-[128px] h-[45px] mt-4 cursor-pointer bg-[#571F88] text-base text-white font-semibold rounded-md flex items-center justify-center gap-2">
@@ -53,8 +36,8 @@ const OurProcess = () => {
             </h1>
             <p className="text-sm text-[#AEAEB2] font-semibold mt-1">
               Whether you’ve got a finished design or just a rough concept,
-              we’re ready to bring it to life. Share your artwork, logo, sketch,
-              or even just an idea, we’ll take it from there.
+              we’re ready to bring it to life. Share your artwork, logo,
+              sketch, or even just an idea, we’ll take it from there.
             </p>
           </div>
         </div>
@@ -89,8 +72,7 @@ const OurProcess = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
 
 export default OurProcess;

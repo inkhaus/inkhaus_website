@@ -35,7 +35,7 @@ const AboutSection = () => {
                   Get in touch
         </motion.button>
         </div>
-          <motion.div data-aos="fade-up" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.1 }} className="w-full h-[429px] aspect-square rounded-2xl">
+          <motion.div data-aos="fade-up" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.1 }} className="w-full md:h-[429px] h-[300px] aspect-square rounded-2xl">
               <Image src="/images/whoWeAre.png" alt="about-image" width={500} height={500} className="w-full h-full rounded-2xl" />
         </motion.div>
       </div>
