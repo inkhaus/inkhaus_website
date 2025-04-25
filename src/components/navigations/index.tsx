@@ -30,8 +30,7 @@ const NavigationHolder = ({
   setIsSmallNav: (value: boolean) => void;
   setIsComplaints: (value: boolean) => void;
 }) => {
-  return (
-    <nav className="w-full container mx-auto p-4 flex items-center justify-between">
+  return <nav className="w-full container mx-auto p-4 flex items-center justify-between">
       <ul className="lg:flex items-center gap-5 hidden ">
         {NavLinks.map((item, index) =>
           <li key={index} className="text-base font-medium">
@@ -41,20 +40,11 @@ const NavigationHolder = ({
           </li>
         )}
       </ul>
-      <div className="w-fit lg:h-[80px] h-[50px] object-cover">
-        <Image
-          src="/icons/logo.svg"
-          alt="logo"
-          width={500}
-          height={500}
-          className="w-full h-full object-cover"
-        />
+      <div className="w-fit h-[80px]  object-cover">
+        <Image src="/icons/logo.svg" alt="logo" width={500} height={500} className="w-full h-full object-cover" />
       </div>
       <div className="lg:flex hidden items-center gap-3">
-        <button
-          onClick={() => setIsComplaints(true)}
-          className="w-[151px] h-[45px] cursor-pointer border border-[#F2F2F7] font-semibold rounded-md flex items-center justify-center gap-2"
-        >
+        <button onClick={() => setIsComplaints(true)} className="w-[151px] h-[45px] cursor-pointer border border-[#F2F2F7] font-semibold rounded-md flex items-center justify-center gap-2">
           <span className="text-base font-semibold">Complaints</span>
           <BsQuestionCircleFill className="text-base" />
         </button>
@@ -67,7 +57,6 @@ const NavigationHolder = ({
       <div onClick={() => setIsSmallNav(true)} className="block lg:hidden">
         <HiMiniBars3BottomRight className="text-2xl cursor-pointer" />
       </div>
-    </nav>
-  );
+    </nav>;
 };
 export default NavigationHolder;
