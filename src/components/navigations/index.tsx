@@ -24,8 +24,10 @@ const NavLinks = [
 ];
 
 const NavigationHolder = ({
+  setIsSmallNav,
   setIsComplaints
 }: {
+  setIsSmallNav: (value: boolean) => void;
   setIsComplaints: (value: boolean) => void;
 }) => {
   return (
@@ -62,7 +64,7 @@ const NavigationHolder = ({
           </button>
         </Link>
       </div>
-      <div className="block lg:hidden">
+      <div onClick={() => setIsSmallNav(true)} className="block lg:hidden">
         <HiMiniBars3BottomRight className="text-2xl cursor-pointer" />
       </div>
     </nav>

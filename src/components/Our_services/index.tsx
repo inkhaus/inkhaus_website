@@ -99,7 +99,7 @@ const OurServices = () => {
   }, []);
   return <section id="services" className="w-full h-full container mx-auto my-4">
       <div className="w-full flex flex-col items-center justify-center">
-        <div className="w-full bg-white sticky md:top-[110px] top-[70px] py-7 left-0 z-50">
+        <div className="w-full bg-white sticky md:top-[110px] top-[70px] px-4 py-7 left-0 z-50">
           <div className="flex items-center justify-center gap-2">
             <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.1 }} className="text-3xl font-semibold tracking-wide">
               Our services
