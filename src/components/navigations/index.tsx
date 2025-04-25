@@ -23,7 +23,11 @@ const NavLinks = [
   }
 ];
 
-const NavigationHolder = () => {
+const NavigationHolder = ({
+  setIsComplaints
+}: {
+  setIsComplaints: (value: boolean) => void;
+}) => {
   return (
     <nav className="w-full container mx-auto p-4 flex items-center justify-between">
       <ul className="lg:flex items-center gap-5 hidden ">
@@ -45,7 +49,10 @@ const NavigationHolder = () => {
         />
       </div>
       <div className="lg:flex hidden items-center gap-3">
-        <button className="w-[151px] h-[45px] border border-[#F2F2F7] font-semibold rounded-md flex items-center justify-center gap-2">
+        <button
+          onClick={() => setIsComplaints(true)}
+          className="w-[151px] h-[45px] cursor-pointer border border-[#F2F2F7] font-semibold rounded-md flex items-center justify-center gap-2"
+        >
           <span className="text-base font-semibold">Complaints</span>
           <BsQuestionCircleFill className="text-base" />
         </button>
@@ -61,5 +68,4 @@ const NavigationHolder = () => {
     </nav>
   );
 };
-
 export default NavigationHolder;
