@@ -40,8 +40,8 @@ const NavigationHolder = ({
           </li>
         )}
       </ul>
-      <div className="w-fit h-[80px]  object-cover">
-        <Image src="/icons/logo.svg" alt="logo" width={500} height={500} className="w-full h-full object-cover" />
+      <div className="md:w-fit w-[110px] h-[70px] md:h-[80px] aspect-square">
+        <Image src="/icons/logo.svg" alt="logo" width={500} height={500} className="w-full h-full " />
       </div>
       <div className="lg:flex hidden items-center gap-3">
         <button onClick={() => setIsComplaints(true)} className="w-[151px] h-[45px] cursor-pointer border border-[#F2F2F7] font-semibold rounded-md flex items-center justify-center gap-2">

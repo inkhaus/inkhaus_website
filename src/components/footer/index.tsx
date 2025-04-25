@@ -6,25 +6,15 @@ import { BsInstagram } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 
 const FooterHolder = () => {
-  return (
-    <div className="w-full container mx-auto flex flex-col gap-14">
+  return <div className="w-full container mx-auto flex flex-col gap-14">
       <div className="w-full grid gap-7 grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
         <div className="w-full">
           <div className="w-fit h-[100px] aspect-square">
-            <Image
-              src="/icons/w-logo.svg"
-              alt="logo"
-              width={500}
-              height={500}
-              className="w-full h-full"
-            />
+            <Image src="/icons/w-logo.svg" alt="logo" width={500} height={500} className="w-full h-full" />
           </div>
-          <div className="flex items-center gap-3.5">
+          <div className="flex items-center gap-3.5 mt-3">
             <FaXTwitter className="text-2xl text-white" />
-            <Link
-              href="https://www.instagram.com/p/DIw_FQOtwnf/?igsh=YXhsa3AxbmxueGIw"
-              target="_blank"
-            >
+            <Link href="https://www.instagram.com/p/DIw_FQOtwnf/?igsh=YXhsa3AxbmxueGIw" target="_blank">
               <BsInstagram className="text-2xl text-white" />
             </Link>
             <FaLinkedin className="text-2xl text-white" />
@@ -34,7 +24,9 @@ const FooterHolder = () => {
           <h2 className="text-base font-semibold text-white">Visit Us</h2>
           <div className="flex flex-col gap-2">
             <p className="text-sm font-medium text-white">Ink Haus GH</p>
-            <p className="text-sm font-medium text-white">Mon–Sat: 9am – 6pm</p>
+            <p className="text-sm font-medium text-white">
+              Mon–Sat: 9am – 6pm
+            </p>
           </div>
         </div>
         <div className="w-full flex flex-col md:gap-5 gap-3 md:ml-8">
@@ -71,8 +63,7 @@ const FooterHolder = () => {
           The expressive, high-quality printing that makes your brand pop.
         </p>
       </div>
-    </div>
-  );
+    </div>;
 };
 
 export default FooterHolder;
