@@ -61,7 +61,7 @@ const FooterHolder = () => {
         </div>
       </div>
       <div className="w-full flex items-end justify-end">
-        <p className="text-sm text-white p-2 border border-[#19181821] rounded-xl">
+        <p className="text-sm text-white p-2 border border-[#19181821] bg-[#2e0f4a] rounded-xl">
           The expressive, high-quality printing that makes your brand pop.
         </p>
       </div>
