@@ -17,7 +17,7 @@ const AboutSection = () => {
       <div  className="w-full flex flex-col md:flex-row gap-5">
         <div data-aos="fade-up" className="w-full">
           <div className="flex items-center gap-2">
-            <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.1 }} className="text-3xl font-semibold tracking-wide">
+            <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.1 }} className="text-4xl font-semibold tracking-wide">
               Who We Are
             </motion.h1>
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.1 }} className="w-[38px] h-[38px] aspect-square">

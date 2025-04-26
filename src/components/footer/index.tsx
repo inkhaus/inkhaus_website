@@ -23,7 +23,9 @@ const FooterHolder = () => {
         <div className="w-full flex flex-col md:gap-5 gap-3">
           <h2 className="text-base font-semibold text-white">Visit Us</h2>
           <div className="flex flex-col gap-2">
-            <p className="text-sm font-medium text-white">Ink Haus GH</p>
+            <p className="text-sm font-medium text-white">
+              hello@inkhaus-gh.com
+            </p>
             <p className="text-sm font-medium text-white">
               Mon–Sat: 9am – 6pm
             </p>

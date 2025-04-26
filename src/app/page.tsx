@@ -4,6 +4,7 @@ import ContactHolder from "@/components/contact";
 import FooterHolder from "@/components/footer";
 import HomeHero from "@/components/hero";
 import ComplaintsModal from "@/components/Modals/Complaints";
+import TrackOrders from "@/components/Modals/TrackOrders";
 import NavigationHolder from "@/components/navigations";
 import SmallNav from "@/components/navigations/SmallNav";
 import OurProcess from "@/components/Our_process";
@@ -13,6 +14,7 @@ import { useState } from "react";
 export default function Home() {
   const [isComplaints, setIsComplaints] = useState<boolean>(false);
   const [isSmallNav, setIsSmallNav] = useState<boolean>(false);
+  const [trackOrder, setTrackOrder] = useState<boolean>(false);
 
   return (
     <div className="w-full relative font-[family-name:var(--font-geist-sans)]">
@@ -20,6 +22,7 @@ export default function Home() {
         <NavigationHolder
           setIsSmallNav={setIsSmallNav}
           setIsComplaints={setIsComplaints}
+          setTrackOrder={setTrackOrder}
         />
       </nav>
       <main className="w-full">
@@ -34,6 +37,7 @@ export default function Home() {
       </footer>
       {isComplaints && <ComplaintsModal setIsComplaints={setIsComplaints} />}
       {isSmallNav && <SmallNav setIsSmallNav={setIsSmallNav} />}
+      {trackOrder && <TrackOrders setTrackOrder={setTrackOrder} />}
     </div>
   );
 }

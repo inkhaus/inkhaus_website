@@ -11,7 +11,7 @@ const OurProcess = () => {
   return <section className="w-full container mx-auto p-4 my-8">
       <div data-aos="fade-up">
         <div className="flex items-center gap-4">
-          <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.1 }} className="text-3xl font-semibold tracking-wide">
+          <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.1 }} className="text-4xl font-semibold tracking-wide">
             Our process
           </motion.h1>
           <div className="w-[32px] h-[32px] aspect-square">
