@@ -13,10 +13,10 @@ const ContactHolder = () => {
   return <section id="contact" className="w-full h-auto contact-holder mt-4 px-3 py-5 md:p-14">
       <div className="w-full container mx-auto flex items-center justify-center">
         <div className="w-full flex flex-col items-center justify-center">
-          <h3 className="text-2xl md:text-4xl text-white font-semibold text-center">
+          <h3 className="text-3xl md:text-5xl text-white font-semibold text-center">
             Ofc printing is personal<br /> to us
           </h3>
-          <p className="text-sm font-semibold text-center text-white mt-2">
+          <p className="text-lg font-semibold text-center text-white mt-2">
             We’d love to print new ideas with you. Send us a message of <br /> what you’d like us to print.
           </p>
           <div className="md:w-[447px] w-full mt-2 bg-white shadow rounded-xl p-6">
