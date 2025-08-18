@@ -16,11 +16,11 @@ const NavLinks = [
   {
     name: "Our services",
     link: "/#services"
-  },
-  {
-    name: "Track order",
-    link: "/"
   }
+  // {
+  //   name: "Track order",
+  //   link: "/"
+  // }
 ];
 
 const NavigationHolder = ({
@@ -60,13 +60,13 @@ const NavigationHolder = ({
         />
       </div>
       <div className="lg:flex hidden items-center gap-3">
-        <button
+        {/* <button
           onClick={() => setIsComplaints(true)}
           className="w-[151px] h-[45px] cursor-pointer border border-[#F2F2F7] font-semibold rounded-md flex items-center justify-center gap-2"
         >
           <span className="text-base font-semibold">Complaints</span>
           <BsQuestionCircleFill className="text-base" />
-        </button>
+        </button> */}
         <Link href="/#contact">
           <button className="w-[128px] h-[45px] cursor-pointer bg-[#571F88] text-base text-white font-semibold rounded-md flex items-center justify-center gap-2">
             Get in touch
