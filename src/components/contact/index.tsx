@@ -37,7 +37,7 @@ const ContactHolder = () => {
     e.preventDefault();
     try {
       setLoading(true)
-      const res = await axios.post(`${process.env.NEXT_PUBLIC_API_BASE}/enquiries/`, {
+      await axios.post(`${process.env.NEXT_PUBLIC_API_BASE}/enquiries/`, {
       fullname:name,
       phoneNumber:phone,
       serviceCategory:service,

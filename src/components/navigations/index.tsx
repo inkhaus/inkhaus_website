@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { BsQuestionCircleFill } from "react-icons/bs";
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
 
 const NavLinks = [
@@ -25,7 +24,7 @@ const NavLinks = [
 
 const NavigationHolder = ({
   setIsSmallNav,
-  setIsComplaints,
+  // setIsComplaints,
   setTrackOrder
 }: {
   setIsSmallNav: (value: boolean) => void;
