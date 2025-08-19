@@ -27,7 +27,7 @@ export default function Home() {
         <OurProcess />
         <ContactHolder />
         <div className="w-full ">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d290.77769021156814!2d-0.17139306950954505!3d5.700898176498345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9da2e7d79ad9%3A0xed0a258763a808e6!2sFeeling%20Auto%20Parts%20ltd-%20Dodowa%20road!5e1!3m2!1sen!2sgh!4v1755591538196!5m2!1sen!2sgh" width="100%" height="450" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d290.777653040722!2d-0.17142375382628777!3d5.700971544053482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9d032585c4e9%3A0x4b7c9ae2d09aea6!2sElectroland%20Ghana%20Limited%20%2C%20Adenta!5e1!3m2!1sen!2sgh!4v1755592652923!5m2!1sen!2sgh" width="100%" height="450" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
         </div>
       </main>
       <footer className="w-full bg-[#330E53] p-4 md:p-8 flex items-center justify-center">
